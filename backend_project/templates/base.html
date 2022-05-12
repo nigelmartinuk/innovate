@@ -8,17 +8,22 @@ extends 'base.html' at the top of every page we want the content to appear  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}"> 
+    <link rel="script" href="{{url_for('static', filename = 'app.js')}}"> 
     <title>base page</title>
 </head>
 <body>
     
     <header>
         <nav>
-            <a href="{{ url_for('alias.home')}}">Home</a> 
-            <a href="{{ url_for('alias.about')}}">About</a>
-            <a href="{{ url_for('alias.contact')}}">Contact</a>
+            <a href="{{ url_for('alias.home')}}">Javascript Original</a> 
+            <a href="{{ url_for('alias.about')}}">About Project</a>
+            <a href="{{ url_for('alias.page1')}}">Page1</a>
+            <a href="{{ url_for('alias.page2')}}">Page2</a>
+            <a href="{{ url_for('alias.page3')}}">Page3</a>
+            <a href="{{ url_for('alias.page4')}}">Page4</a>
+            <a href="{{ url_for('alias.page5')}}">Page5</a>
         </nav>
-        <h1>Welcome to the CodeNation</h1>
+        <h1>Welcome to the {codenation} backend project</h1>
     </header>
 
     {% block content %}
