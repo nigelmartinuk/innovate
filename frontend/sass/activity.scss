@@ -2,6 +2,11 @@
 
 /* imported font families: "Poiret One", cursive; font-family: "Josefin Sans", sans-serif;    */
 
+/* adding a header accent variable */
+$mainAccent : #ed254e;
+$secondAcccent : #4fadb3;
+$headfont : "Poiret One", cursive;
+$contentfont : "Josefin Sans", sans-serif;
 
 /* elements */
 
@@ -9,7 +14,7 @@ body {
   background-color: #465362;
   margin: 0px;
 }
-
+/* these a re the original headers. next they are changed usin mixin
 h1 {
   font-family: "Poiret One", cursive;
   color: #ed254e;
@@ -25,6 +30,43 @@ h3 {
   margin-top: 0px;
   font-size: 2em;
 }
+*/
+
+/* first add the mixin * /
+@mixin heading {
+  font-family: "Poiret One", cursive;
+  color: #ed254e;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* then use the mixin via an include * /
+h1 {
+  @include heading;
+  font-size: 3em;
+}
+
+h3 {
+  @include heading;
+  font-size: 2em;
+}
+
+*/
+
+/* add parameter to the heading mixin */
+@mixin heading ($fontsize) {
+  font-family: "Poiret One", cursive;
+  color: #ed254e;
+  text-align: center;
+  margin-top: 0px;
+  font-size: $fontsize;
+}
+
+/* then use the mixin with a parameter an include */
+h1 { @include heading( 3em); }
+
+h3 { @include heading( 2em); }
+
 
 button {
   background-color: #ed254e;
@@ -61,7 +103,7 @@ nav a:hover {
 
 /* classes */
 .content {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: $secondAccent;
   color: #011936;
   font-size: 1.1em;
   width: 70%;
@@ -74,7 +116,7 @@ nav a:hover {
 }
 
 .inner {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: $contentfont;
   color: #011936;
   font-size: 1.1em;
   width: 60%;
@@ -88,7 +130,7 @@ nav a:hover {
 }
 
 .inner2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: $contentfont;
   color: #011936;
   font-size: 1.1em;
   width: 60%;
@@ -100,4 +142,10 @@ nav a:hover {
   margin-bottom: 2%;
   padding: 1%;
   border-bottom: #4f4db3 10px solid;
+}
+
+/* creating a new class inheriting from a previous using @extend */
+inner2 {
+  @extend .inner;
+  border-bottom: $secondAccent 10px solid;
 }
