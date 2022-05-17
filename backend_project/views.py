@@ -12,6 +12,7 @@ def home():
 def admin():
     return render_template('admin.html')
 
+
 # these three routes point to the default index.html page
 @alias.route("/javascript")
 @alias.route("/js")
