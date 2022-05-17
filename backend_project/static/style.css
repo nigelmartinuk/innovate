@@ -1,8 +1,29 @@
-body{
+body {
     background-color: rgb(245, 247, 255);
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
+}
+
+#admin_window {
+    display: block;
+    margin: auto;
+    width: 33%;
+    height: 20%;
+    padding: 1% 2% 2% 2%;
+    background-color: lightgray;
+}
+
+#admin_window h2 {
+    color: blue;
+    text-align: center;
+}
+
+#userin,
+#passin {
+    display: block;
+    width: 75%;
+    background-color: ivory;
 }

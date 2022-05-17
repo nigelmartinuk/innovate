@@ -7,6 +7,11 @@ alias = Blueprint('alias', __name__)
 def home():
     return render_template('index.html')
 
+# add route for admin page
+@alias.route("/admin")    
+def admin():
+    return render_template('admin.html')
+
 # these three routes point to the default index.html page
 @alias.route("/javascript")
 @alias.route("/js")
