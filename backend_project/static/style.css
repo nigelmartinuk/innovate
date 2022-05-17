@@ -1,10 +1,16 @@
-body {
-    background-color: rgb(245, 247, 255);
-}
 
-nav {
+
+/*  next three commented changes were made after original styling was applied
+    site wide
+body { removed selector as it is redundant
+    background-color: rgb(245, 247, 255);
+} */
+
+nav { 
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(245, 247, 255); /* added after original...  */
+    color: black;                         /* added after original...  */
 }
 
 #admin_window {
