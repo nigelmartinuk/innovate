@@ -18,8 +18,10 @@ This repo holds the core Python, HTML, CSS, Javascript activity and project file
 
 The backend and fullstack directories hold websites dependent on the Flask Micro Frame work, however the Framework has been removed from Github to conserve space.
 
-> ```python -m venv
+> ```
+> python -m venv
 > source venv/Scripts/activate
-> pip install Flask```
+> pip install Flask
+> ```
 
 Will surfice to build the necessary Flask micro framework.
