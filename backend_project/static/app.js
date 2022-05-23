@@ -11,6 +11,8 @@ function displayDate(id) {
 
 
 function checkCookies() {
+    console.log("checking them cookies")
+
     let text = ""
     if (navigator.cookiesEnabled == true) {
         text = "cookies are enabled";

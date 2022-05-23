@@ -9,7 +9,10 @@ extends 'base.html' at the top of every page we want the content to appear  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename = 'main.css')}}"> 
     <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}"> 
-    <script src="{{url_for('static', filename = 'app.js')}}" ></script>
+<!-- added type="text/javascript" to correct error
+added darkmode.js to get darkmode button working -->
+<script src="{{url_for('static', filename = 'app.js')}}" ></script>
+<script src="{{url_for('static', filename = 'darktoggle.js')}}" ></script>
     <title>JavaScript Events</title>
 </head>
 
