@@ -1,7 +1,7 @@
 # Innovate:Coding 030522
 #### Portfolio Submission for Nigel Martin @202205230545
 
-This repo holds the core Python, HTML, CSS, Javascript activity and project files from the 03 May 2022 3 week L3 Python course, run by CodeNation.
+This repo holds the core Python, HTML, CSS, Javascript activity and project files from the 03 May 2022 CodeNation 3 week L3 Python course.
 
 > Links:
 > -
