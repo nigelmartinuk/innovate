@@ -8,7 +8,7 @@ This repo holds the core Python, HTML, CSS, Javascript activity and project file
 >
 [Backend project directory](./backend_project/)
 
-~~[Full Stack project (FSP) directory](./fullstack_project/)~~
+[Full Stack project (FSP) directory](https://github.com/nigelmartinuk/fsp)
 
 [Trello Projecting board](https://trello.com/b/SCqQAfYA/fsp-full-stack-project)
 
